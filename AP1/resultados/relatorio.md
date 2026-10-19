@@ -22,6 +22,14 @@ Foram comparadas duas configurações de algoritmo genético real para minimizar
 | Execuções por caso | 30 |
 | Semente-mestra | 309 |
 
+### Justificativa dos parâmetros
+
+Os parâmetros foram definidos como escolhas heurísticas para este experimento, sem uma busca sistemática de ajuste. A representação real foi escolhida por se tratar de variáveis contínuas e por permitir o uso direto dos operadores numéricos. A população de 100 indivíduos oferece diversidade para a busca sem tornar excessivo o custo de cada geração; o limite de 300 gerações segue o enunciado.
+
+A taxa de crossover de 0,9 favorece a recombinação frequente dos progenitores. A taxa de mutação por gene, 1/n, corresponde a uma expectativa de aproximadamente uma variável mutada por descendente, mantendo perturbações ocasionais sem alterar todos os genes. No Caso 1, o desvio-padrão gaussiano de 10% da amplitude do intervalo permite perturbações de magnitude moderada; no Caso 2, eta=20 define uma mutação polinomial mais concentrada em alterações menores, mas que ainda pode gerar passos maiores.
+
+O elitismo de 1 indivíduo preserva o melhor da geração sem impedir a renovação do restante da população. A pressão 1,7 no ranking linear foi escolhida para favorecer indivíduos melhores sem tornar a seleção determinista. Os dois pares de operadores foram escolhidos para comparar estratégias distintas de recombinação e perturbação, mantendo os demais parâmetros iguais para facilitar a comparação.
+
 ## Operadores
 
 - **Caso 1:** crossover BLX-alpha (alpha=0.5); mutação gaussiana (sigma=10% do intervalo).
@@ -31,7 +39,7 @@ Os casos compartilham os mesmos parâmetros gerais e as mesmas sementes dentro d
 
 ## Resultados
 
-As estatísticas abaixo são calculadas sobre o melhor fitness final de cada execução. O desvio-padrão é amostral (ddof=1).
+As estatísticas abaixo são calculadas sobre o melhor fitness final de cada execução. O desvio-padrão é amostral (ddof=1). O “pior melhor-fitness” é o maior dos melhores fitness obtidos nas execuções, não o pior indivíduo da população final.
 
 | Caso | Melhor fitness | Pior melhor-fitness | Média | Desvio-padrão | Tempo médio (s) |
 |---|---:|---:|---:|---:|---:|

@@ -18,6 +18,14 @@ Foi implementada Evolução Diferencial com representação real, população in
 | Execuções por caso | 30 |
 | Semente da ordem de execução | 309 |
 
+### Justificativa dos parâmetros
+
+Os parâmetros foram definidos como escolhas heurísticas para este experimento, sem uma busca sistemática de ajuste. O tamanho da população (Np=100) busca manter diversidade suficiente para a busca em 100 dimensões sem elevar excessivamente o custo de cada geração. O limite de 300 gerações segue o enunciado.
+
+O peso de mutação F=0,5 controla a amplitude das diferenças usadas para formar o vetor doador; esse valor foi adotado como compromisso heurístico entre passos exploratórios e alterações mais moderadas. A taxa Cr=0,9 favorece a contribuição do doador no crossover binomial, preservando também componentes do vetor-alvo. A regra do operador força ao menos uma coordenada do doador, mesmo quando Cr=0.
+
+Os dois casos mantêm Np, F, Cr e o orçamento de gerações iguais para comparar as estratégias de perturbação sob as mesmas condições. Assim, os resultados descrevem estas configurações e não demonstram superioridade universal de uma estratégia.
+
 ## Casos de teste e operadores
 
 - **Caso 1 — DE/rand/1/bin:** o vetor doador é `x_r1 + F (x_r2 - x_r3)`, com três índices distintos entre si e diferentes do alvo.
@@ -27,7 +35,7 @@ Nos dois casos, o crossover binomial combina alvo e doador, forçando pelo menos
 
 ## Resultados
 
-As estatísticas são calculadas sobre o melhor fitness final de cada execução; o desvio-padrão é amostral.
+As estatísticas são calculadas sobre o melhor fitness final de cada execução; o desvio-padrão é amostral. O “pior melhor-fitness” é o maior dos melhores fitness obtidos nas execuções, não o pior indivíduo da população final.
 
 | Caso | Melhor fitness | Pior melhor-fitness | Média | Desvio-padrão | Tempo médio (s) |
 |---|---:|---:|---:|---:|---:|

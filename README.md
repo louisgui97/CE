@@ -45,7 +45,8 @@ python -m pep309.ap2 --seed 309 --output AP2\resultados
 
 Sem `--seed`, a AP1 usa sementes aleatórias e a ordem dos casos é aleatorizada;
 na AP2, as sementes continuam pareadas com a AP1 e apenas a ordem dos casos
-muda. Relatórios e dados ficam no diretório informado.
+muda. Os scripts salvam os dados de execução (CSV e JSON); os relatórios em
+`relatorio.md`.
 
 ## Testes
 
@@ -64,7 +65,7 @@ apoio ao longo das atividades deste repositório.
 #### 1. Suporte à Revisão de Código e Interpretação
 
 * **Ferramenta:** Assistente de IA via Copilot SDK no Visual Studio Code
-  (versão/modelo específico não registrado).
+  (versão Copilot Free "modelo Auto").
 * **Etapas de aplicação:** Apoio à interpretação crítica dos enunciados das
   atividades e à revisão de código Python, incluindo sugestões de otimização.
 * **Exemplo de prompt / comando:** Solicitar a análise de um trecho de código
