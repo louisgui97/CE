@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="310" viewBox="0 0 780 310" role="img" aria-labelledby="title desc">
+  <title id="title">Extremos do melhor fitness por caso — AP1</title>
+  <desc id="desc">Intervalo entre o menor e o maior melhor fitness observado em 30 execuções de cada caso. Menor fitness é melhor.</desc>
+  <style>
+    text { font-family: Arial, sans-serif; fill: #24292f; }
+    .grid { stroke: #d8dee4; stroke-width: 1; }
+    .range { stroke: #57606a; stroke-width: 5; stroke-linecap: round; }
+    .best { fill: #1a7f37; }
+    .worst { fill: #cf222e; }
+    .label { font-size: 14px; }
+    .value { font-size: 13px; font-weight: 600; }
+    .tick { font-size: 12px; fill: #57606a; }
+  </style>
+  <text x="15" y="25" font-size="18" font-weight="700">AP1 — extremos do melhor fitness (30 execuções)</text>
+  <text x="15" y="49" font-size="13" fill="#57606a">Menor fitness é melhor; cada linha liga o mínimo ao máximo observado.</text>
+  <line class="grid" x1="170" y1="70" x2="170" y2="220"/>
+  <line class="grid" x1="276.25" y1="70" x2="276.25" y2="220"/>
+  <line class="grid" x1="382.5" y1="70" x2="382.5" y2="220"/>
+  <line class="grid" x1="488.75" y1="70" x2="488.75" y2="220"/>
+  <line class="grid" x1="595" y1="70" x2="595" y2="220"/>
+  <line class="grid" x1="701.25" y1="70" x2="701.25" y2="220"/>
+  <text class="label" x="15" y="117">Caso 1</text>
+  <line class="range" x1="576.38" y1="112" x2="649.75" y2="112"/>
+  <circle class="best" cx="576.38" cy="112" r="7"/>
+  <circle class="worst" cx="649.75" cy="112" r="7"/>
+  <text class="value" x="576.38" y="96" text-anchor="middle">917,95</text>
+  <text class="value" x="649.75" y="96" text-anchor="middle">1083,68</text>
+  <text class="label" x="15" y="192">Caso 2</text>
+  <line class="range" x1="204.76" y1="187" x2="229.22" y2="187"/>
+  <circle class="best" cx="204.76" cy="187" r="7"/>
+  <circle class="worst" cx="229.22" cy="187" r="7"/>
+  <text class="value" x="204.76" y="171" text-anchor="middle">78,51</text>
+  <text class="value" x="229.22" y="155" text-anchor="middle">133,77</text>
+  <line x1="170" y1="220" x2="701.25" y2="220" stroke="#57606a"/>
+  <text class="tick" x="170" y="239" text-anchor="middle">0</text>
+  <text class="tick" x="276.25" y="239" text-anchor="middle">240</text>
+  <text class="tick" x="382.5" y="239" text-anchor="middle">480</text>
+  <text class="tick" x="488.75" y="239" text-anchor="middle">720</text>
+  <text class="tick" x="595" y="239" text-anchor="middle">960</text>
+  <text class="tick" x="701.25" y="239" text-anchor="middle">1200</text>
+  <circle class="best" cx="205" cy="272" r="6"/>
+  <text class="tick" x="217" y="276">Melhor (menor fitness)</text>
+  <circle class="worst" cx="415" cy="272" r="6"/>
+  <text class="tick" x="427" y="276">Pior melhor-fitness (maior)</text>
+  <text class="tick" x="435" y="301" text-anchor="middle">Melhor fitness final</text>
+</svg>

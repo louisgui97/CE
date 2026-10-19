@@ -46,6 +46,12 @@ As estatísticas abaixo são calculadas sobre o melhor fitness final de cada exe
 | Caso 1 | 917.95003 | 1083.6791 | 988.83222 | 37.5704 | 1.9244 |
 | Caso 2 | 78.508436 | 133.77387 | 101.60758 | 16.157844 | 1.8249 |
 
+### Extremos do melhor fitness por execução
+
+O gráfico mostra, para cada caso, o menor e o maior valor de melhor fitness obtidos nas 30 execuções. Como a função é minimizada, valores menores são melhores. O extremo superior é o pior entre os melhores resultados de cada execução, não o pior indivíduo de uma população.
+
+![Intervalo entre o melhor e o pior melhor-fitness observado em cada caso da AP1](extremos-fitness.svg)
+
 ### Indivíduos extremos observados
 
 **Caso 1 — melhor (execução 10, f=917.95003):**
