@@ -7,6 +7,8 @@ from typing import Callable
 import numpy as np
 from numpy.typing import NDArray
 
+from pep309.objectives import rastrigin
+
 FloatArray = NDArray[np.float64]
 Operator = Callable[[FloatArray, FloatArray, np.random.Generator, "GAConfig"], FloatArray]
 
@@ -75,18 +77,6 @@ class RastriginResult:
     best_individual: FloatArray
     worst_individual: FloatArray
     elapsed_seconds: float
-
-
-def rastrigin(individuals: FloatArray) -> FloatArray:
-    """Evaluate Rastrigin for one vector or a matrix of individuals."""
-    values = np.asarray(individuals, dtype=np.float64)
-    if values.ndim not in (1, 2):
-        raise ValueError("individuals deve ser um vetor ou uma matriz")
-    if values.shape[-1] < 1:
-        raise ValueError("cada individuo deve ter ao menos uma variavel")
-    return 10.0 * values.shape[-1] + np.sum(
-        values**2 - 10.0 * np.cos(2.0 * np.pi * values), axis=-1
-    )
 
 
 def linear_ranking_probabilities(fitness: FloatArray, pressure: float) -> FloatArray:

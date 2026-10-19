@@ -33,6 +33,20 @@ Enunciado: [AP1/PEP309-2026-02-assignment-001-ga.pdf](AP1/PEP309-2026-02-assignm
 python -m pep309.ap1 --seed 309 --output AP1\resultados
 ```
 
+### AP2 – Evolução Diferencial
+
+Enunciado: [AP2/PEP309-2026-02-assignment-002-de.pdf](AP2/PEP309-2026-02-assignment-002-de.pdf).
+O experimento pareia as sementes com a AP1 e compara os dois casos de DE com o
+Caso 2 do algoritmo genético.
+
+```powershell
+python -m pep309.ap2 --seed 309 --output AP2\resultados
+```
+
+Sem `--seed`, a AP1 usa sementes aleatórias e a ordem dos casos é aleatorizada;
+na AP2, as sementes continuam pareadas com a AP1 e apenas a ordem dos casos
+muda. Relatórios e dados ficam no diretório informado.
+
 ## Testes
 
 ```powershell
