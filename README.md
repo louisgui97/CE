@@ -52,3 +52,30 @@ muda. Relatórios e dados ficam no diretório informado.
 ```powershell
 python -m pytest
 ```
+
+## Declaração de Uso de Inteligência Artificial Generativa (IAGen)
+
+Em conformidade com as diretrizes da Resolução CONPEP nº 144 da UFOP, declaro
+que utilizei ferramentas de Inteligência Artificial Generativa como recurso de
+apoio ao longo das atividades deste repositório.
+
+### Detalhes do Uso por Atividade / Etapa
+
+#### 1. Suporte à Revisão de Código e Interpretação
+
+* **Ferramenta:** Assistente de IA via Copilot SDK no Visual Studio Code
+  (versão/modelo específico não registrado).
+* **Etapas de aplicação:** Apoio à interpretação crítica dos enunciados das
+  atividades e à revisão de código Python, incluindo sugestões de otimização.
+* **Exemplo de prompt / comando:** Solicitar a análise de um trecho de código
+  Python ou de um enunciado, apontando possíveis melhorias ou ambiguidades e
+  justificando as sugestões.
+* **Critério de validação:** Todo código gerado ou sugerido pela ferramenta foi
+  testado, depurado e validado manualmente, verificando sua correção e
+  adequação aos enunciados. As sugestões foram tratadas criticamente, e a
+  responsabilidade pelas decisões e pelo conteúdo final é do estudante.
+
+---
+
+*Nota: Assumo total responsabilidade pela integridade, correção e autoria
+intelectual do conteúdo final entregue neste repositório.*
