@@ -6,8 +6,8 @@ Implementações, experimentos e relatórios das atividades práticas da discipl
 
 ## Estrutura
 
-- `AP<n>/`: enunciado, resultados e relatório de cada atividade.
-- `src/pep309/ap<n>/`: implementação específica, quando houver.
+- `AP<n>/`: enunciado, resultados e relatório de cada atividade prática.
+- `src/pep309/ap<n>/`: implementação de cada atividade prática.
 - `tests/`: testes automatizados.
 
 Cada atividade pode usar um método evolucionário diferente; seus comandos,
@@ -49,6 +49,11 @@ muda. Os scripts salvam os dados de execução (CSV e JSON); os relatórios em
 `relatorio.md`.
 
 ## Testes
+
+Os testes automatizados verificam componentes dos algoritmos e aspectos
+essenciais dos experimentos, como factibilidade das soluções, reprodutibilidade
+e pareamento das execuções. Eles ajudam a detectar regressões e dão confiança
+de que mudanças na implementação preservam o comportamento esperado.
 
 ```powershell
 python -m pytest
